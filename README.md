@@ -15,3 +15,7 @@ Antigravity 的界面部分会跟随系统代理，但真正发模型请求的�
 **常见问题**
 
 报连接失败先检查代理软件是否在运行、端口是否和脚本里一致。切换启动方式后首次可能出现一次 `Model unavailable, retrying`，随后自动恢复，不用处理。如果个别请求仍然超时，说明某些 Go 底层调用连环境变量也不认，兜底办法是用 Proxifier 按进程名只放行 `Antigravity.exe` 和 `language_server.exe` 走代理。
+
+**致谢**
+
+本方案由作者与 AI 协作伙伴 hy4 flash 共同排查定位并整理成文。
