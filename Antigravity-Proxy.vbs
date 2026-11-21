@@ -6,7 +6,8 @@ Option Explicit
 Dim ws, env, proxy, exePath, cmdLine, ans
 
 ' ==== EDIT THIS IF YOUR PROXY PORT DIFFERS ====
-proxy = "http://127.0.0.1:7897"
+' Common ports: Clash Verge = 7897, 365VPN = 57777
+proxy = "http://127.0.0.1:57777"
 
 Set ws = CreateObject("WScript.Shell")
 exePath = ws.ExpandEnvironmentStrings("%LOCALAPPDATA%") & _
